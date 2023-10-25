@@ -1,0 +1,83 @@
+.box1{
+    width: 200px;
+    height: 200px;
+    border: 2px solid #f01010;
+    transform: translate(100px,50px);
+}
+.box2{
+    width: 200px;
+    height: 200px;
+    border: 2px solid #f4810f;
+    margin-bottom: 10px;
+  
+}
+.rotate{
+    background-color: #711cfa;
+    color: aliceblue;
+    transform: rotate(40deg);
+}
+.box3{
+    width: 200px;
+    height: 200px;
+    border: 2px solid #124598;
+    transform: skewY(40deg);
+}
+.box4{
+    width: 200px;
+    height: 200px;
+    border: 2px solid #07a58d;
+  transition:width,height;
+    transition-duration: 4s,5s;
+    transition-delay: 4s;
+}
+.box4:hover{
+    background-color: #d983b8;
+    color: #fff;
+    width: 200px;
+   height: 200px; 
+}
+.box6{
+    width: 100px;
+    height: 130px;
+    border: 2px solid #e5f710;
+    margin-bottom: 10px;
+    margin-left: 180px;
+    margin-top: 100px;
+    transform: scale(2,2);
+}
+.box5{
+    width: 200px;
+    height: 200px;
+    border: 2px solid black;
+    color:white;
+    background-color: brown;
+    position: relative;
+   animation: testA 5s linear 3s forwards infinite  alternate;
+}
+@keyframes testA{
+    0%{
+        background-color: deeppink;
+        left: 0;
+        top: 0;
+    }
+    25%{
+     background-color: purple;
+     left: 100px;
+     top: 0;
+    }
+    50%{
+        background-color: blue;
+        left: 100px;
+        top: 100px;
+    }
+    75%{
+        background-color: aqua;
+        left: 0px;
+        top:100px;
+    }
+    100%{
+        background-color: green;
+        left: 0;
+        top: 0;
+    }
+}
